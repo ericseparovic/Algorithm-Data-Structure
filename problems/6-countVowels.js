@@ -1,10 +1,10 @@
 // ********************
-// ****EJERCICIO 5*****
+// ****EJERCICIO 6*****
 // ********************
 // Create a Javascript function that takes a string parameter and return an object with
 // the number of times each vowel appears in the string.
 // ********************
-// ****SOLUTION 5*****
+// ****SOLUTION 6*****
 // ********************
 // This JavaScript function, countVowel, takes a string as input and returns an object
 // that counts the occurrence of each vowel in the input string.
