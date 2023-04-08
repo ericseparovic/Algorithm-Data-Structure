@@ -1,14 +1,1 @@
-## Problem 1 - calcCentury
 
-Given a year, return the century it is in. The first century spans from the year 1 up to and including the year 100, the second - from the year 101 up to and including the year 200, etc.
-
-- For year = 1905, the output should be
-  solution(year) = 20;
-- For year = 1700, the output should be
-  solution(year) = 17.
-
-## Problem 2 - is Palindrome
-
-Given the string, check if it is a palindrome.
-
-For inputString = "aabaa", the output should be
