@@ -6,27 +6,20 @@
 // ********************
 // ****SOLUTION 10*****
 // ********************
-function adjacentElementsProduct(array) {
-  let max = 0;
-  let n = array.length;
-  let product;
-  let a;
-  let b;
 
-  for (let i = 0; i < n; i++) {
-    for (let j = 1; j < n; j++) {
-      product = array[i] * array[j];
-      if (product > max) {
-        max = 0;
-        let a = array[i];
-        let b = array[j];
-      }
-      console.log(array[j], array[i]);
-    }
+function adjacentElementsProduct(nums) {
+  if (nums.length === 1) {
+    return undefined;
   }
 
-  return max, a, b;
+  let max = nums[0] * nums[1];
+  for (let i = 1; i < nums.length - 1; i++) {
+    let product = nums[i] * nums[i + 1];
+    if (product > max) {
+      max = product;
+    }
+  }
+  return max;
 }
 
-const result = adjacentElementsProduct([1, 2, 3]);
-console.log(result);
+module.exports = adjacentElementsProduct;
