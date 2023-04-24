@@ -9,9 +9,8 @@ import java.util.Scanner;
 public class calcCentury1 {
     public static void main(String[] args) {
         int year = getYear();
-        int century = calcCentury(year);
-        System.out.println("The year " + year + " is century " + century);
-
+        int century = getCentury(year);
+        System.out.println("The year " + year + " Century " + century);
     }
 
     public static int getYear() {
@@ -21,9 +20,9 @@ public class calcCentury1 {
         return year;
     }
 
-    public static int calcCentury(int year) {
+    public static int getCentury(int year) {
         int century = year / 100 + 1;
-        if (year % 100 == 0) {
+        if (century % 100 == 0) {
             century--;
         }
 
