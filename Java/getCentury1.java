@@ -6,29 +6,39 @@ import java.util.Scanner;
  * Write a Java program that prompts the user for a year, calculates and
  * displays the corresponding century in the console.}
  */
-public class calcCentury1 {
+public class getCentury1 {
     public static void main(String[] args) {
         int year = getYear();
-        int century = getCentury(year);
-        System.out.println("The year " + year + " Century " + century);
+        System.out.println(year);
+
+        int century = calcCentury(year);
+        System.out.println(century);
+
     }
 
     public static int getYear() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Write year: ");
-        int year = scanner.nextInt();
+        int year = 0;
+        try {
+            System.out.println("Write year");
+            year = scanner.nextInt();
+        } catch (Exception e) {
+            System.out.println("An error occurred: " + e.getMessage());
+        } finally {
+            scanner.close();
+        }
+
         return year;
     }
 
-    public static int getCentury(int year) {
+    public static int calcCentury(int year) {
         int century = year / 100 + 1;
-        if (century % 100 == 0) {
+        if (year / 100 == 0) {
             century--;
         }
 
         return century;
     }
-
 }
 
 // Solution 1 - calcCentury
