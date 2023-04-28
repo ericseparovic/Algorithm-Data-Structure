@@ -1,43 +1,35 @@
+///////////////////////////////
+// Problem 2 - isPalindrome //
+/////////////////////////////
+// Write a Java program that takes a word from the user and checks if it is a palindrome. 
+// A palindrome is a word that is spelled the same way forwards and backwards. For example, "racecar" is a palindrome. 
+
 import java.util.Scanner;
 
-import javax.print.attribute.standard.RequestingUserName;
-
-/**
- * isPalindrome
- */
 public class isPalindrome {
-
     public static void main(String[] args) {
-
-        String word = getString();
-        System.out.print(testIfPalindrome(word));
-
-    }
-
-    public static String getString() {
+        // Read input
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Insert word");
-        String input = scanner.nextLine();
+        System.out.println("Write text");
+        String text = scanner.nextLine();
+        System.out.println(text);
         scanner.close();
-        return input;
+
+        System.out.println(testIfIsPalindome(text));
     }
 
-    public static Boolean testIfPalindrome(String word) {
-        char[] letters = word.toCharArray();
-        // If the string is odd, it is not a palindrome
-        if (letters.length % 2 == 0) {
-            return false;
-        }
+    public static Boolean testIfIsPalindome(String text) {
+        String newText = text.replaceAll("\\s+", "").toLowerCase();
+        char[] letters = newText.toCharArray();
 
         for (int i = 0; i < letters.length; i++) {
-            int right = i;
-            int left = letters.length - 1 - i;
-
-            if (letters[left] != letters[right]) {
+            if (letters[i] != letters[letters.length - 1 - i]) {
+                System.out.println(letters[i] == letters[letters.length - 1 - i]);
                 return false;
             }
         }
 
         return true;
+
     }
 }
