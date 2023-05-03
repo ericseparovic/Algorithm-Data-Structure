@@ -14,4 +14,10 @@ describe('isPalindrome', () => {
     test('returns true for empty string', () => {
         expect((0, _2_isPalindrome_1.default)('')).toBe(true);
     });
+    test('Check if a sentence is a palindrome', () => {
+        const sentence1 = 'A man a plan a canal Panama';
+        const sentence2 = 'This sentence is not a palindrome';
+        expect((0, _2_isPalindrome_1.default)(sentence1)).toBe(true);
+        expect((0, _2_isPalindrome_1.default)(sentence2)).toBe(false);
+    });
 });
