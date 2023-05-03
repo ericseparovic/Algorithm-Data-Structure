@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function isPalindrome(text) {
     let arrayText = text.split("");
     for (let i = 0; i < arrayText.length; i++) {
@@ -7,8 +8,7 @@ function isPalindrome(text) {
         if (arrayText[i] !== arrayText[arrayText.length - 1 - i]) {
             return false;
         }
-        return true;
     }
+    return true;
 }
-const result = isPalindrome("ana");
-console.log(result);
+exports.default = isPalindrome;

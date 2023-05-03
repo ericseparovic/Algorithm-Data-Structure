@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Write a Java program that prompts the user for a year, calculates and
  * displays the corresponding century in the console.}
  */
-public class getCentury1 {
+public class getCentury  {
     public static void main(String[] args) {
         int year = getYear();
         System.out.println(year);

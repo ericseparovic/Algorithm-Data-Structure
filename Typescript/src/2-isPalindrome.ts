@@ -14,12 +14,10 @@ function isPalindrome(text: String){
         if(arrayText[i] !== arrayText[arrayText.length - 1 - i]) {
             return false;
         }
-        
-        return true;
-
+    
     } 
+
+    return true;
 }
 
-const result = isPalindrome("ana")
-
-console.log(result)
+export default isPalindrome;
