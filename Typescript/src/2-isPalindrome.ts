@@ -8,9 +8,6 @@ function isPalindrome(text: String){
 
     for(let i=0;i < arrayText.length; i++) {
 
-        let left:Number = i;
-        let right: Number = arrayText.length - 1 - i;
-
         if(arrayText[i] !== arrayText[arrayText.length - 1 - i]) {
             return false;
         }
