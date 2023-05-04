@@ -13,8 +13,6 @@ function isPalindrome(text: String): boolean {
     // Convert text in array
     let arrayText = textLowerCase.split("")
 
-    console.log(arrayText)
-
     for(let i=0;i < arrayText.length; i++) {
 
         if(arrayText[i] !== arrayText[arrayText.length - 1 - i]) {

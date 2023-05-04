@@ -4,7 +4,6 @@ function isPalindrome(text) {
     let textWhitoutSpaces = text.replace(/\s/g, '');
     let textLowerCase = textWhitoutSpaces.toLowerCase();
     let arrayText = textLowerCase.split("");
-    console.log(arrayText);
     for (let i = 0; i < arrayText.length; i++) {
         if (arrayText[i] !== arrayText[arrayText.length - 1 - i]) {
             return false;
