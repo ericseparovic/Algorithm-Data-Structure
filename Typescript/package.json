@@ -9,7 +9,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest --config=jest.config.js",
+    "test": "jest --config=jest.config.js --watch",
     "tsc": "npx tsc --watch"
   },
  "jest": {
