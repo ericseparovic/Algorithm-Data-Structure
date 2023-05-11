@@ -3,3 +3,4 @@
 | Challenge 1                | Description                                          |                 |                      |
 | Challenge 1                | Description                                          |                 |                      |
 | Challenge 3 - sumOfElemens | Create an array of integers and sum all the elements |                 |                      |
+| -------------------------- | ---------------------------------------------------- | --------------- | -------------------- |
