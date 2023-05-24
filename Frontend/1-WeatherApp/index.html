@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script defer></script>
     <title>Weather app</title>
 </head>
 
@@ -12,8 +13,8 @@
     <header class="header">
         <h1>Weather App</h1>
         <form class="form" action="">
-            <input class="form__search" type="search" placeholder="Search city">
-            <input class="form__button" type="button" value="Search">
+            <input class="form__search" id="city" type="search" placeholder="Search city">
+            <input class="form__button" id="btn" type="button" value="Search">
         </form>
     </header>
     <main class="main">
@@ -27,6 +28,7 @@
             <p>Wind speend</p>
         </section>
     </main>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
