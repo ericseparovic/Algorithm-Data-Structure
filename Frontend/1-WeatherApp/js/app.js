@@ -1,4 +1,5 @@
 const btn = document.querySelector("#btn");
+const container = document.querySelector("#container");
 
 btn.addEventListener("click", getData);
 
@@ -14,6 +15,24 @@ async function getData() {
   }
 }
 
-function showWeather(weather) {
-  console.log(weather);
+function showWeather(data) {
+  const { main, name, wind, weather } = data;
+  const { temp, humidity } = main;
+  const { speed } = wind;
+  const { description } = weather[0];
+
+  let html = `
+  <section class="section__weather">
+            <h2>${name}</h2>
+            <img src="" alt="">
+            <p>Temp: ${temp}</p>
+            <p>Humidity: ${humidity}</p>
+            <p>Speed: ${speed}</p>
+            <p>Description: ${description}</p>
+  </section> 
+  `;
+
+  console.log(wind);
+
+  container.innerHTML = html;
 }
