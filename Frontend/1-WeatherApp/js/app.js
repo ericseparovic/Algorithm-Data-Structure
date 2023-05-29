@@ -32,7 +32,5 @@ function showWeather(data) {
   </section> 
   `;
 
-  console.log(wind);
-
   container.innerHTML = html;
 }
